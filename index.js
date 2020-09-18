@@ -47,17 +47,17 @@ const questions = [
       name: 'usage_link',
       message: 'Would you like to create a link to a video tutorial or wiki page?',
       default: true
-   }
-   ,
-   {
+    }
+    ,
+    {
     type: 'input',
     name: 'link_name',
     message: 'Please enter the name of your link',
     when: ({ usage_link}) => usage_link,
     validate: nameInput => nameInput? true : false
-   }
-   ,
-   {
+    }
+    ,
+    {
         type: 'input',
         name: 'link_url',
         message: 'Please enter the url of your link',
@@ -73,33 +73,33 @@ const questions = [
          validate: nameInput => nameInput? true : false
         
      }
-    ,
-    {
+     ,
+     {
         type: 'input',
         name: 'tests',
         message: 'Testing Instructions',
         validate: nameInput => nameInput? true : false
-    }
-    ,
-    {
+     }
+     ,
+     {
         type: 'input',
         name: 'github_user',
         message: 'Please enter your Github username',
         validate: nameInput => nameInput? true : false
-    }
-    ,
-    {
+     }
+     ,
+     {
         type: 'input',
         name: 'email',
         message: 'Please enter your email address',
         validate: nameInput => nameInput? true : false
-    },
-    {
+     },
+     {
       type: 'rawlist',
       name: 'license',
       message: 'Enter your license',
       choices: ['Apache v2.0', 'MIT License','GNU General Public License v3.0','Mozilla Public License 2.0']
-    }
+     }
   ];
 
 // inquirer prompt

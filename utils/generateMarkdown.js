@@ -1,11 +1,11 @@
-// function to generate h1 markdown for README title
-const generateH1Markdown = section => {
+// function to generate h1 heading for README title
+const generateH1 = section => {
   return `# ${section}
 
 `;
 }
 
-const generateH2Markdown = section => {
+const generateH2 = section => {
   return `## ${section}
 
 `;
@@ -24,6 +24,8 @@ const generateLink = (url,name) => {
 
   return `[${name}](${url})` ;
 }
+
+//makes sure to break line for every element in the table of contents
 
 const generateTable = array => {
   let table = ``;
@@ -110,16 +112,12 @@ of this license document, but changing it is not allowed.
 
 }
 
-const generateBadge = license => {
+const generateBadge = license => licenses[license].badge
 
-  return licenses[license].badge
 
-}
 
-const generateLicenseText = license => {
+const generateLicenseText = license => licenses[license].text
 
-  return licenses[license].text
-}
 
 const generateMarkdown = data => {
 
@@ -130,37 +128,37 @@ const generateMarkdown = data => {
 
 
 return `
-${generateH1Markdown(title)}
+${generateH1(title)}
 
 ${generateBadge(license)}
 
-${generateH2Markdown("Table of Contents")}
+${generateH2("Table of Contents")}
 ${generateTable(["Description","Usage","Contributing","Tests","Installation","Questions","License"])}  
 
 
-${generateH2Markdown("Description")}
+${generateH2("Description")}
 ${description}  
 
-${generateH2Markdown("Usage")}
+${generateH2("Usage")}
 ${usage}  
 ${generateLink(link_url,link_name)}  
 
-${generateH2Markdown("Contributing")}
+${generateH2("Contributing")}
 ${contributing}  
 
-${generateH2Markdown("Tests")}
+${generateH2("Tests")}
 ${tests}  
 
-${generateH2Markdown("Installation")}
+${generateH2("Installation")}
 ${installation}  
 ${generateCodeBlock(codeBlock)}  
 
-${generateH2Markdown("Questions")}
+${generateH2("Questions")}
 Contact me at:  
 ${generateLink(email,email)}  
 ${generateLink(github_url,github_url)}  
 
-${generateH2Markdown("License")}
+${generateH2("License")}
 ${generateLicenseText(license)}
 
 `
