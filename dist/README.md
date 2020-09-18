@@ -1,9 +1,9 @@
 
-# Gaspar da Raiz
+# Gaspar
 
 
 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Table of Contents
 
@@ -20,47 +20,59 @@
 * [Installation](#installation)  
  
 * [Questions](#questions)  
+ 
+* [License](#license)  
   
+
 
 ## Description
 
 
-sfsdf
+da Raiz  
 
 ## Usage
 
- 
-afsdf  
 
+asdasd  
+  
 
 ## Contributing
 
 
-afsdf
+aasd  
 
 ## Tests
 
 
-sdsdfsdf
+asdasd  
 
 ## Installation
 
 
-afsdf  
-
+ssasda  
+ ``` $ node index.js ```   
 
 ## Questions
 
- 
+
 Contact me at:  
 [evangelistabjj](evangelistabjj)  
-[http://www.github.com/marcobjj](http://www.github.com/marcobjj)
+[http://www.github.com/marcobjj](http://www.github.com/marcobjj)  
 
 ## License
 
- 
-Mozilla Public License Version 2.0  
-==================================  
-[Link to Full text](https://choosealicense.com/licenses/mpl-2.0/)
+
+Copyright 2020
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
     
+        http://www.apache.org/licenses/LICENSE-2.0
+    
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 
