@@ -22,7 +22,18 @@ const generateLink = (url,name) => {
 
   if(!name || !url) return '';
 
+ 
+
   return `[${name}](${url})` ;
+}
+
+const generateEmailLink = (email) => {
+
+  if(!email) return '';
+
+  let mailTo = "mailto:"+email;
+
+  return `[${email}](${mailTo})` ;
 }
 
 //makes sure to break line for every element in the table of contents
@@ -155,7 +166,7 @@ ${generateCodeBlock(codeBlock)}
 
 ${generateH2("Questions")}
 Contact me at:  
-${generateLink(email,email)}  
+${generateEmailLink(email)}  
 ${generateLink(github_url,github_url)}  
 
 ${generateH2("License")}
