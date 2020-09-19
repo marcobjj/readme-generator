@@ -11,6 +11,7 @@ const generateH2 = section => {
 `;
 }
 
+// triple backticks generate code block
 const generateCodeBlock = codeblock => {
 
   if(!codeblock) return '';
@@ -54,6 +55,7 @@ const generateTable = array => {
 
 }
 
+//each license is an object containing array and text;
 const licenses = { 
   
   'Apache v2.0':{
@@ -123,13 +125,15 @@ of this license document, but changing it is not allowed.
 
 }
 
+// fetch badge in the licenses object
 const generateBadge = license => licenses[license].badge
 
 
-
+// fetch text in the license object
 const generateLicenseText = license => licenses[license].text
 
 
+// generate document in markdown language
 const generateMarkdown = data => {
 
    
@@ -175,13 +179,5 @@ ${generateLicenseText(license)}
 `
 
 }
-
-
-
-
-
-//const obj = {text:'sample text'};
-
-//console.log(generateCodeBlock(obj));
 
 module.exports = generateMarkdown;
