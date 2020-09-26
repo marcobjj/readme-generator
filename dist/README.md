@@ -1,5 +1,5 @@
 
-# README Generator
+# Team Profile Generator
 
 
 
@@ -28,28 +28,28 @@
 ## Description
 
 
-Generates professional readme files using Mardown language  
+Generates web development profiles in html format taking user input.  
 
 ## Usage
 
 
-Watch the video tutorial below:  
-[Video Tutorial](https://www.youtube.com/watch?v=2HCgiecjFMM&ab_channel=MarcoEvangelista)  
+Watch the tutorial video below:  
+[https://www.youtube.com/watch?v=3titF7_kF_o](https://www.youtube.com/watch?v=3titF7_kF_o)  
 
 ## Contributing
 
 
-Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms.  
+This is a 1-person student project for UC Berkeley bootcamp 2020 and not meant to have any contributors at this time.  
 
 ## Tests
 
 
-Use Mocha.js  
+All four main classes in this project were tested with Jest test runner. The classes are Employee.js, Manager.js,Engineer.js, and Intern.js. The tests can be found in the folder named __tests__. Every variable and method within those four main classes passed their respective tests.  
 
 ## Installation
 
 
-Requirements: Node.js and node package manager (npm) must be installed in your machine. Clone the repository using git. In the command line, go the application's main folder and install it using the command "npm i".  
+Clone the repository using git, then go to the root folder of Team Profile Generator and type:  
  ``` $ npm i ```   
 
 ## Questions
